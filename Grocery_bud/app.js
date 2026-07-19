@@ -71,7 +71,7 @@ function clearItems() {
   }
   container.classList.remove("show-container");
   displayAlert("empty list", "danger");
-    localStorage.removeItem("list");
+  localStorage.removeItem("list");
   setBackToDefault();
 }
 // delete function
@@ -176,3 +176,7 @@ function createListItem(id, value) {
   //   append Child
   list.appendChild(element);
 }
+
+// add  date
+const date = document.getElementById("date");
+date.innerHTML = new Date().getFullYear();
